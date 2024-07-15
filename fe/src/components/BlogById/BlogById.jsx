@@ -26,7 +26,7 @@ const BlogById = () => {
     (async () => {
       const {
         data: { data },
-      } = await axios.get(`http://localhost:8080/api/v1/blogs/${blogId}`);
+      } = await axios.get(`https://blog-app-api-flax.vercel.app/api/v1/blogs/${blogId}`);
 
       setBlog(data.blog);
       setComments(data.comments);

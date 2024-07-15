@@ -13,7 +13,7 @@ const RegistrationScreen = () => {
     try {
       e.preventDefault();
 
-      await axios.post("http://localhost:8080/api/v1/users/register", {
+      await axios.post("https://blog-app-api-flax.vercel.app/api/v1/users/register", {
         username,
         email,
         password,
